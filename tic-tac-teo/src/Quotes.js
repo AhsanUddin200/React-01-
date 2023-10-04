@@ -26,12 +26,12 @@ export default function Quotes() {
 
     return (
         <div className="p-4 text-center">
-            <Link to="/quotes" className="text-blue-500 hover:underline">Quotes</Link>
+            <Link to="/quotes" className="text-blue-500 hover:underline"></Link>
             <p className="text-lg font-semibold mt-4">{quote}</p>
             <button
                 onClick={handlefunction}
-                className="bg-blue-500 text-white px-4 py-2 mt-4 rounded hover:bg-blue-600 focus:outline-none focus:bg-blue-600"
-            >
+                className="bg-red-500 text-white px-4 py-2 rounded hover:bg-yellow-600 focus:outline-none focus:bg-red-600"
+                >
                 New Quote
             </button>
         </div>

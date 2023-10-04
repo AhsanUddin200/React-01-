@@ -4,28 +4,28 @@ import { Link } from 'react-router-dom';
 function List() {
   return (
     <div>
-      <h1>Routes List</h1>
-      <ul>
+      <h1>Routes</h1>
+      <ul className='space-y-4'>
         <li>
-          <Link to="/app">App</Link>
+          <Link to="/app" className="text-blue-500 hover:text-red-700">App</Link>
         </li>
         <li>
-          <Link to="/qa">Q.A</Link>
+          <Link to="/qa" className="text-blue-500 hover:text-red-700">Q.A</Link>
         </li>
         <li>
-          <Link to="/quotes">Quotes</Link>
+          <Link to="/quotes" className="text-blue-500 hover:text-red-700">Quotes</Link>
         </li>
         <li>
-          <Link to="/table">Table</Link>
+          <Link to="/table" className="text-blue-500 hover:text-red-700">Table</Link>
         </li>
         <li>
-          <Link to="/users">Users</Link>
+          <Link to="/users" className="text-blue-500 hover:text-red-700">Users</Link>
         </li>
         <li>
-          <Link to="/video">Video</Link>
+          <Link to="/video" className="text-blue-500 hover:text-red-700">Video</Link>
         </li>
         <li>
-          <Link to="/github">Github</Link>
+          <Link to="/github" className="text-blue-500 hover:text-red-700">Github</Link>
         </li>
       </ul>
     </div>
