@@ -72,20 +72,26 @@ export default function Users() {
   }
 
   return (
-    <div>
-      <h2>User Table</h2>
-     
+    <div   className="flex flex-col items-center justify-center h-screen">
 
-      <input
+        <h2 className="mb-4 text-center">
+          <span className="bg-blue-500 text-blue px-4 py-1 font-bold mr-2 ">User Table</span>
+        </h2>
+        <div className="flex-items-center">
+        <span className="bg-red-500 text-blue px-4 py-1 font-bold mr-2 ">Search from input</span>
+        &nbsp; &nbsp;
+      <input 
         type="text"
         placeholder="Search here"
         name="user"
         value={searchQuery}
         onChange={(e) => setSearchQuery(e.target.value)}
+        className="border border-red-300 rounded px-4 py-1 focus:outline-none focus:border-blue-700 mr-2 "
       />
       &nbsp; &nbsp;
 
-      <label htmlFor="Email">Email..</label>
+      <label htmlFor="Email" className="bg-red-500 font-bold">Search from Email..</label>
+      &nbsp; &nbsp;
         {loading ? (<label htmlFor="loading" >Loading...</label>):( 
     
       <select
@@ -93,20 +99,23 @@ export default function Users() {
         id="emails" 
         value={selectedEmail}
         onChange={(e) => setSelectedEmail(e.target.value)}
+        className="border border-red-300 rounded px-4 py-1 focus:outline-none focus:border-blu-700 mr-2"
       >
         <option value="">All Emails</option>
         {email.map((email) => (
           <option key={email}>{email}</option>
         ))}
       </select>
+      
         )}
-
+        </div>
+&nbsp; &nbsp;
       {loading ?   <h3>Loading...</h3>
        : (
-        <table> 
-          <thead>
+        <table className="table-fixed"> 
+          <thead className="bg-red-500 ">
             <tr>
-              <th onClick={() => handlesort("id")}>ID</th>
+              <th onClick={() => handlesort("id")} >ID</th>
               <th onClick={() => handlesort("name")}>Name</th>
               <th onClick={() => handlesort("email")}>Email</th>
               <th onClick={() => handlesort("phone")}>Phone</th>
