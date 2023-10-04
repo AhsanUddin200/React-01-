@@ -99,7 +99,7 @@ export default function Users() {
         id="emails" 
         value={selectedEmail}
         onChange={(e) => setSelectedEmail(e.target.value)}
-        className="border border-red-300 rounded px-4 py-1 focus:outline-none focus:border-blu-700 mr-2"
+        className="border border-red-300 rounded px-4 py-1 focus:outline-none focus:border-blue-700 mr-2"
       >
         <option value="">All Emails</option>
         {email.map((email) => (
