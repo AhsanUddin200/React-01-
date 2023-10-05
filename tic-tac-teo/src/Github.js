@@ -26,18 +26,20 @@ function App() {
   };
 
   return (
-    <div>
-      <h1 className="text-2xl font-bold mb-4">GitHub User Search</h1>
+    <div className='flex flex-col items-center justify-center h-screen'>
+      &nbsp; &nbsp;
+
+      <h1 className="text-2xl font-bold mr-4">GitHub User Search</h1>
       <input
         type="text"
         value={searchValue}
         onChange={SearchChange}
         placeholder="Enter Username or Email"
-        className="border border-gray-300 rounded px-2 py-1 focus:outline-none focus:border-blue-500"
+        className="border border-gray-300 rounded px-2 py-1 focus:outline-none focus:border-blue-500 mb-2"
       />
       <button
         onClick={searchUser}
-        className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 focus:outline-none focus:bg-blue-600"
+        className="bg-blue-500 text-white px-4 py-1 rounded hover:bg-blue-600 focus:outline-none focus:bg-blue-600"
       >
         Search
       </button>
