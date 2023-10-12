@@ -34,7 +34,7 @@ function QuestionAns() {
           <li key={index} className="mb-4">
             <div
               onClick={() => openAnswer(index)}
-              className={`border p-3 rounded-lg cursor-pointer ${currentIndex === index ? 'bg-red-500' : 'bg-white'}`}
+              className={`border p-3 rounded-lg cursor-pointer ${currentIndex === index ? 'bg-yellow-500' : 'bg-white'}`}
             >
               <h4>{q.question}</h4>
             </div>

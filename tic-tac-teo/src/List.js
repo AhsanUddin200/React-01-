@@ -12,6 +12,9 @@ function List() {
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
         <nav style={{ background: 'linear-gradient(to bottom, #000 20%, transparent 20%)', border: '0.5px solid #100', width: '1800px' }}>
           <ul className="flex list-none">
+          <li className="mr-6">
+              <Link to="/profile" className="text-black-500 hover:text-red-900">Profile</Link>
+            </li>
             <li className="mr-6">
               <Link to="/app" className="text-black-500 hover:text-red-900">App</Link>
             </li>
@@ -30,8 +33,21 @@ function List() {
             <li className="mr-6">
               <Link to="/video" className="text-black-500 hover:text-yellow-900">Video</Link>
             </li>
-            <li>
+            <li className="mr-6">
               <Link to="/github" className="text-black-500 hover:text-yellow-900">Github</Link>
+            </li>
+             <li className="mr-6">
+              <Link to="/weather" className="text-black-500 hover:text-red-900">Weather</Link>
+            </li>
+            <li className="mr-6">
+  <Link to="/news" className="text-black-500 hover:text-red-900">News</Link>
+</li>
+<li className="mr-6">
+  <Link to="/todo" className="text-black-500 hover:text-red-900">Todo</Link>
+</li>
+
+            <li className="mr-auto">
+              <Link to="/logout" className="text-black-500 hover:text-red-900">Logout</Link>
             </li>
           </ul>
         </nav>
