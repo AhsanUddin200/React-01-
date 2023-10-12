@@ -32,6 +32,7 @@ function Todo() {
   return (
     <div>
       {error && <p>{error}</p>}
+      {todoData ? ( 
       <ul>
         {todoData.map((todo) => {
           return (
@@ -55,6 +56,9 @@ function Todo() {
           );
         })}
       </ul>
+      ):(
+        <p>Loading</p>
+      )}
     </div>
   );
 }

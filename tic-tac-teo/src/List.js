@@ -46,9 +46,10 @@ function List() {
   <Link to="/todo" className="text-black-500 hover:text-red-900">Todo</Link>
 </li>
 
-            <li className="mr-auto">
-              <Link to="/logout" className="text-black-500 hover:text-red-900">Logout</Link>
-            </li>
+<li className="ml-80">
+  <Link to="/logout" className="text-white hover:text-red-200 bg-black rounded p-0.1 ">Logout</Link>
+</li>
+
           </ul>
         </nav>
       </div>
