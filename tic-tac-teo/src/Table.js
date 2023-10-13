@@ -135,7 +135,7 @@ export default function Users() {
                 <td>{user.company.name}</td>
                 <td>
                   {user.address.street}, {user.address.suite},{" "}
-                  {user.address.city}, {user.address.zipcode}
+                  {user.address.city}, {user.address.zipcode}                                                                                                                       
                 </td>
               </tr>
             ))}
