@@ -23,11 +23,11 @@ function List() {
         >
           
           <ul className="flex list-none">
-            <li className="mr-6">
+            {/* <li className="mr-6">
               <Link to="/profile" className="text-black hover:text-red-500">
                 Profile
               </Link>
-            </li>
+            </li> */}
             <li className="mr-6">
               <Link to="/app" className="text-black hover:text-red-600">
                 App
@@ -87,6 +87,11 @@ function List() {
                 Todo
               </Link>
             </li>
+             <li className="mr-6">
+              <Link to="/book" className="text-black hover:text-red-900">
+                Book
+              </Link>
+            </li>
          
 
             <li className="mr-6">
@@ -98,12 +103,16 @@ function List() {
               </Link>
               
             </li>
-            <button type="button" class="flex mr-3 text-sm bg-gray-800 rounded-full md:mr-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" id="user-menu-button" aria-expanded="false" data-dropdown-toggle="user-dropdown" data-dropdown-placement="bottom">
-        <span class="sr-only">Open user menu</span>
-        <img class="w-6 h-6 rounded-full" src="https://scontent.fkhi16-1.fna.fbcdn.net/v/t39.30808-6/320711413_670005641446096_7031334688315553448_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeG1eLH-0BBpg1ONCWV7GeCwJQ2GFBU6YTIlDYYUFTphMok6wjMf4LduZ5wvOuMTxWr77LRxQTsX0FJG5KMTbogE&_nc_ohc=WwIifGCoN1YAX8i7K-K&_nc_ht=scontent.fkhi16-1.fna&oh=00_AfCTXpnH8cmOJMwKCpReCzTGjEcmy9GliCGnse-6kTuT_w&oe=652D5A54" alt="Remote Image"></img>
+            <li className="mr-6">
+  <Link to="/profile"> 
+    <img
+      className="w-6 h-6 rounded-full"
+      src="https://scontent.fkhi16-1.fna.fbcdn.net/v/t39.30808-6/320711413_670005641446096_7031334688315553448_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeG1eLH-0BBpg1ONCWV7GeCwJQ2GFBU6YTIlDYYUFTphMok6wjMf4LduZ5wvOuMTxWr77LRxQTsX0FJG5KMTbogE&_nc_ohc=WwIifGCoN1YAX8i7K-K&_nc_ht=scontent.fkhi16-1.fna&oh=00_AfCTXpnH8cmOJMwKCpReCzTGjEcmy9GliCGnse-6kTuT_w&oe=652D5A54"
+      alt="Remote Image"
+    />
+  </Link>
+</li>
 
-
-      </button>
       
           </ul>
         </nav>

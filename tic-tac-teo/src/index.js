@@ -17,6 +17,7 @@ import Logout from './Logout';
 import Profile from './Profile';
 import News from './News';
 import Todo from './Todo';
+import Book from './Book';
 
 import { Auth0Provider } from '@auth0/auth0-react';
 
@@ -54,6 +55,8 @@ root.render(
         <Route path="/logout" element={<Logout />} />
         <Route path="/news" element={<News />} />
         <Route path="/todo" element={<Todo />} />
+        <Route path="/book" element={<Book />} />
+       
         
                  
                 
