@@ -92,6 +92,28 @@ function List() {
                 Book
               </Link>
             </li>
+              <li className="mr-6">
+              <Link to="/mcqs" className="text-black hover:text-red-900">
+                Mcqs
+              </Link>
+            </li>
+            <li className="mr-6">
+              <Link to="/BMI" className="text-black hover:text-red-900">
+                BMI
+              </Link>
+            </li>
+            <li className="mr-6">
+              <Link to="/Stopwatch" className="text-black hover:text-red-900">
+                Stopwatch
+              </Link>
+            </li>
+                <li className="mr-6">
+              <Link to="/Product" className="text-black hover:text-red-900">
+                Product
+              </Link>
+            </li>
+         
+         
          
 
             <li className="mr-6">
@@ -103,6 +125,7 @@ function List() {
               </Link>
               
             </li>
+         
             <li className="mr-6">
   <Link to="/profile"> 
     <img
@@ -111,38 +134,52 @@ function List() {
       alt="Remote Image"
     />
   </Link>
+  
 </li>
 
       
           </ul>
         </nav>
       </div>
-      {/* <div class="flex  ">
-  <div class="w-2/3 p-9">
-  <span
-  className="bg-clip-text text-transparent bg-gradient-to-r from-black to-red-500"
-  style={{ fontSize: '50px' }}
->
-  Why we use routes in raect...
-</span>
+      <div className="flex">
+        <div className="w-2/3 p-9">
+          <span
+            className="bg-clip-text text-transparent bg-gradient-to-r from-black to-red-500"
+            style={{ fontSize: '50px' }}
+          >
+            Why we use routes in React...
+          </span>
 
-<br></br>
-    <p className="bg-origin-content p-4 border-4 border-red-300 rounded-lg border-dashed ...">
-      The primary goal of Router in React JS is to supply the browser with an
-      asynchronous URL that corresponds to the data that will show on the web
-      page. It is mainly used to create single-page web apps since it retains
-      the application's regular structure and functionality. The Router in
-      React JS is primarily used to create Single Page Web Apps. In the
-      application, React Router is utilized to define various routes. When a
-      user enters a URL into your browser and the URL route equals one of
-      several 'pathways' as in the router folder, the user is sent to that
-      route. One of the prominent front-end platforms is ReactJS. Thousands of
-      developers have utilized it for various use cases and applications. One
-      of the most excellent features of ReactJS is that We can use it with a
-      wide range of other technologies, including routers.
-    </p>
-  </div>
-</div> */}
+          <br></br>
+         
+            <p className="bg-origin-content p-4 border-4 border-red-300 rounded-lg border-dashed ...">
+              The primary goal of Router in React JS is to supply the browser with an
+              asynchronous URL that corresponds to the data that will show on the web
+              page. It is mainly used to create single-page web apps since it retains
+              the application's regular structure and functionality. The Router in
+              React JS is primarily used to create Single Page Web Apps. In the
+              application, React Router is utilized to define various routes. When a
+              user enters a URL into your browser and the URL route equals one of
+              several 'pathways' as in the router folder, the user is sent to that
+              route. One of the prominent front-end platforms is ReactJS. Thousands of
+              developers have utilized it for various use cases and applications. One
+              of the most excellent features of ReactJS is that We can use it with a
+              wide range of other technologies, including routers.
+            </p>
+ 
+        </div> 
+        <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
+        <img
+  src="https://cdn.icon-icons.com/icons2/2389/PNG/512/react_logo_icon_144942.png"
+  alt="React Logo"
+  className="h-60 w-300 mt-24"
+  style={{
+    filter: 'brightness(20) saturate(100%) hue-rotate(0deg) sepia(100%) grayscale(30) invert(0) sepia(30) saturate(750%) hue-rotate(0deg) drop-shadow(0 0 10px red)',
+  }}
+/>
+
+          </div>
+        </div>
 
     </div>
   );

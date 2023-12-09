@@ -18,6 +18,11 @@ import Profile from './Profile';
 import News from './News';
 import Todo from './Todo';
 import Book from './Book';
+import Mcqs from './Mcqs';
+import BMI from './BMI';
+import Stopwatch from './Stopwatch';
+import Product from './Product';
+import AppOption from './AppOption';
 
 import { Auth0Provider } from '@auth0/auth0-react';
 
@@ -56,6 +61,11 @@ root.render(
         <Route path="/news" element={<News />} />
         <Route path="/todo" element={<Todo />} />
         <Route path="/book" element={<Book />} />
+        <Route path="/mcqs" element={<Mcqs />} />
+        <Route path="/BMI" element={<BMI />} />
+        <Route path="/Stopwatch" element={<Stopwatch />} />
+        <Route path="/Product" element={<Product />} />
+        <Route path="/AppOption" element={<AppOption />} />
        
         
                  
